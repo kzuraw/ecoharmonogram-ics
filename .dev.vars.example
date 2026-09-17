@@ -1,0 +1,6 @@
+CALENDAR_TOKEN="replace-with-a-long-random-token"
+ECO_TOWN="your-town"
+ECO_DISTRICT="your-district"
+ECO_STREET="your-street"
+ECO_HOUSE_NUMBER="your-house-number"
+ECO_STREET_SIDE="your-property-type"

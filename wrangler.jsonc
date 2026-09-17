@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "ecoharmonogram-ics",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-17",
+  "observability": {
+    "enabled": true,
+  },
+  "triggers": {
+    "crons": ["17 3 * * *"],
+  },
+  "kv_namespaces": [
+    {
+      "binding": "CALENDAR_KV",
+      "id": "00000000000000000000000000000000",
+    },
+  ],
+}
