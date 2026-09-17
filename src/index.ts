@@ -4,7 +4,6 @@ import type {
   AddressConfig,
   CachedAddressResolution,
   CalendarMetadata,
-  Env,
 } from "./types";
 
 const CALENDAR_KEY = "calendar.ics";

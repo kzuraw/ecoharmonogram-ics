@@ -2,7 +2,7 @@ import { env, exports } from "cloudflare:workers";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import { refreshCalendar } from "../src/index";
-import type { CalendarMetadata, Env } from "../src/types";
+import type { CalendarMetadata } from "../src/types";
 import { createEcoApiMock } from "./fixtures";
 
 const workerEnv = env as unknown as Env;

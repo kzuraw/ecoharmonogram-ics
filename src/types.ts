@@ -1,13 +1,3 @@
-export interface Env {
-  CALENDAR_KV: KVNamespace;
-  CALENDAR_TOKEN: string;
-  ECO_TOWN: string;
-  ECO_DISTRICT: string;
-  ECO_STREET: string;
-  ECO_HOUSE_NUMBER: string;
-  ECO_STREET_SIDE: string;
-}
-
 export interface AddressConfig {
   town: string;
   district: string;

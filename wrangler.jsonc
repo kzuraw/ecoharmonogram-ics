@@ -5,6 +5,24 @@
   "compatibility_date": "2026-09-17",
   "observability": {
     "enabled": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 0.01,
+    },
+  },
+  "secrets": {
+    "required": [
+      "CALENDAR_TOKEN",
+      "ECO_TOWN",
+      "ECO_DISTRICT",
+      "ECO_STREET",
+      "ECO_HOUSE_NUMBER",
+      "ECO_STREET_SIDE",
+    ],
   },
   "triggers": {
     "crons": ["17 3 * * *"],
@@ -12,7 +30,7 @@
   "kv_namespaces": [
     {
       "binding": "CALENDAR_KV",
-      "id": "00000000000000000000000000000000",
+      "id": "21a9cfbb9c894e88977a23a8bc69784c",
     },
   ],
 }

@@ -84,16 +84,11 @@ after reviewing a local calendar.
    pnpm wrangler login
    ```
 
-2. Create the production KV namespace:
+2. The production `CALENDAR_KV` namespace is already configured in
+   `wrangler.jsonc`. For a different Cloudflare account, create a namespace and
+   replace its ID before deploying.
 
-   ```sh
-   pnpm wrangler kv namespace create CALENDAR_KV
-   ```
-
-3. Replace the placeholder `id` under `kv_namespaces` in `wrangler.jsonc` with
-   the namespace ID printed by Wrangler.
-
-4. Add each production value as an encrypted Worker secret. Wrangler prompts
+3. Add each production value as an encrypted Worker secret. Wrangler prompts
    for each value, so it does not need to appear in shell history:
 
    ```sh
@@ -105,7 +100,7 @@ after reviewing a local calendar.
    pnpm wrangler secret put ECO_STREET_SIDE
    ```
 
-5. Verify and deploy:
+4. Verify and deploy:
 
    ```sh
    pnpm lint
@@ -113,7 +108,7 @@ after reviewing a local calendar.
    pnpm deploy
    ```
 
-6. Make one request to initialize KV:
+5. Make one request to initialize KV:
 
    ```text
    https://<worker-host>/calendar/<CALENDAR_TOKEN>.ics
