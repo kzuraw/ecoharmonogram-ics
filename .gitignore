@@ -1,7 +1,7 @@
-node_modules/
 .dev.vars
+.DS_Store
 .wrangler/
+*.log
 coverage/
 dist/
-*.log
-.DS_Store
+node_modules/
