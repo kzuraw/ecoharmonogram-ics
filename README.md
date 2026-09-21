@@ -1,6 +1,6 @@
 # EcoHarmonogram ICS
 
-A private Cloudflare Worker that converts one EcoHarmonogram address schedule
+A self-hosted Cloudflare Worker that converts one EcoHarmonogram address schedule
 into an Apple Calendar subscription.
 
 The Worker refreshes the complete calendar every day at 03:17 UTC, stores the
@@ -131,5 +131,17 @@ paths return 404 without revealing whether the Worker hosts a calendar. The
 response supports `ETag` revalidation and reports snapshot freshness through
 `Last-Modified`, `X-Calendar-Last-Updated`, and `X-Calendar-Event-Count` headers.
 
-The upstream API protocol is based on the
+## Acknowledgements
+
+The upstream API protocol implementation was developed with reference to the
 [EcoHarmonogram Home Assistant integration](https://github.com/mampfes/hacs_waste_collection_schedule/blob/master/custom_components/waste_collection_schedule/waste_collection_schedule/service/EcoHarmonogramPL.py).
+See [Third-party notices](THIRD_PARTY_NOTICES.md) for attribution and license
+details.
+
+This is an unofficial project. It is not affiliated with or endorsed by
+EcoHarmonogram or WebSolution. The upstream API is undocumented and may change
+without notice.
+
+## License
+
+This project is available under the [MIT License](LICENSE).
