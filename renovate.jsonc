@@ -11,6 +11,6 @@
     "enabled": true,
     "groupName": "all dependencies",
     "groupSlug": "all",
-    "schedule": ["* 6-9 1 * *"] // First day of each month, 06:00–09:59 (Europe/Warsaw).
-  }
+    "schedule": ["* 6-9 1 * *"], // First day of each month, 06:00–09:59 (Europe/Warsaw).
+  },
 }
